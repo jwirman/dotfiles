@@ -1,13 +1,22 @@
---ignore-dir=rails
---ignore-dir=tmp
---ignore-dir=log
+# ignore directory
+--ignore-dir=coverage
+--ignore-dir=vendor
 --ignore-dir=.bundle
 --ignore-dir=public/assets
---ignore-dir=data
---type-set=cucumber=.feature
---type-set=haml=.haml
+--ignore-dir=tmp
+--ignore-dir=log
+# file associations
+--type-set=builder=.builder
+--type-set=scss=.scss
 --type-set=sass=.sass
 --type-set=css=.scss
+--type-set=feature=.feature
+--type-set=cucumber=.feature
+--type-set=json=.json
+--type-set=php=.php
+--type-set=haml=.haml
 --type-set=coffee=.coffee
+# settings
+--smart-case
 --group
 --color
