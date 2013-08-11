@@ -1,0 +1,25 @@
+[user]
+	name = jwirman
+	email = jwirman@gmail.com
+[core]
+	sharedRepository = all
+[color]
+	grep = auto
+	branch = auto
+	diff = auto
+	status = auto
+[diff]
+	renames = true
+[alias]
+	st = status
+	d = diff
+	co = checkout
+	b = branch
+	dfc = diff --cached
+	gpr = pull --rebase
+	ls = log --graph --color --pretty=\"format:%C(yellow)%h%Creset%C(green)%d%Creset %s %Cblue[%aN]%Creset %C(magenta){%cr}%Creset\"
+	la = log --graph --color --pretty=\"format:%C(yellow)%h%Creset%C(green)%d%Creset %s %Cblue[%aN]%Creset %C(magenta){%cr}%Creset\" --all
+[grep]
+	lineNumber = true
+[merge]
+	tool = vimdiff
