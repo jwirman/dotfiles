@@ -2,6 +2,8 @@
 	name = jwirman
 	email = jwirman@gmail.com
 [core]
+	autocrlf = input
+	excludesfile = /Users/justin/.gitignore
 	sharedRepository = all
 [color]
 	grep = auto
@@ -11,15 +13,22 @@
 [diff]
 	renames = true
 [alias]
-	st = status
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
 	d = diff
-	co = checkout
-	b = branch
 	dfc = diff --cached
 	gpr = pull --rebase
+  hist = log --pretty=oneline --abbrev-commit --graph --decorate
+  type = cat-file -t
+  dump = cat-file -p
+  week = log --all --pretty --since='7 days ago'
 	ls = log --graph --color --pretty=\"format:%C(yellow)%h%Creset%C(green)%d%Creset %s %Cblue[%aN]%Creset %C(magenta){%cr}%Creset\"
 	la = log --graph --color --pretty=\"format:%C(yellow)%h%Creset%C(green)%d%Creset %s %Cblue[%aN]%Creset %C(magenta){%cr}%Creset\" --all
 [grep]
 	lineNumber = true
 [merge]
 	tool = vimdiff
+[push]
+	default = simple
