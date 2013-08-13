@@ -76,6 +76,9 @@ alias f='cucumber --no-profile --autoformat tmp'
 # rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+# alias git to hub to use git shorthand
+eval "$(hub alias -s)"
+
 # bash completion and git completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
