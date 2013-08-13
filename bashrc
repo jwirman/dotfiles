@@ -5,7 +5,7 @@ shopt -s histappend
 # environment variables
 export JAVA_HOME=/Library/Java/Home
 export CLICOLOR=1
-export LSCOLORS=Gxfxcxdxbxegedabagacad
+export LSCOLORS=Exfxcxdxbxegedabagacad
 export EDITOR='vim'
 export GREP_OPTIONS='--color=auto --exclude-dir=\.git'
 export HISTCONTROL=ignoreboth:erasedups
