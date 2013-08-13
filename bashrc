@@ -39,7 +39,6 @@ alias rtags="find . -name '*.rb' | xargs ctags -a"
 alias psef='ps -ef | grep'
 alias stalk='ps auxwww | head -n 1; ps auxwww | grep -v "grep -i" | grep -i '
 alias prp="git pull --rebase && git push"
-alias cgd="cd ~/.rvm/gems/"
 
 alias gs="git status"
 alias gd="git diff"
@@ -54,11 +53,6 @@ alias bi="bundle install"
 if [ -f /opt/local/etc/bash_completion ]; then
   source /opt/local/etc/bash_completion
 fi
-if [[ -s ~/.rvm/scripts/rvm ]]; then
-  source ~/.rvm/scripts/rvm
-fi
-
-[[ -r $rvm_path/scripts/completion ]] && source $rvm_path/scripts/completion
 
 if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
   source /usr/local/etc/bash_completion.d/git-completion.bash
@@ -72,7 +66,5 @@ fi
 function km {
   ps aux | grep $1 | awk '{print $2}' | xargs kill
 }
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 source ~/.bash_vcs.sh
