@@ -10,7 +10,7 @@ export EDITOR='vim'
 export GREP_OPTIONS='--color=auto --exclude-dir=\.git'
 export HISTCONTROL=ignoreboth:erasedups
 export HISTSIZE=10000
-export LESS="-erX"
+export LESS="-ErX"
 #export PS1="[\u@local:\W:(\$(git branch 2>/dev/null | grep '^*' | colrm 1 2))]\$ "
 #export PATH=~/homebrew/bin:$PATH
 export PATH=/usr/local/bin:$PATH
