@@ -245,11 +245,6 @@ filetype plugin indent on
 "" Show (partial) command in the status line
 "set showcmd
 "
-"" Include user's local vim config
-"if filereadable(expand("~/.vimrc.local"))
-"  source ~/.vimrc.local
-"endif
-"
 "augroup BWCCreateDir
 "  au!
 "  autocmd BufWritePre * if expand("<afile>")!~#'^\w\+:/' && !isdirectory(expand("%:h")) | execute "silent! !mkdir -p ".shellescape(expand('%:h'), 1) | redraw! | endif
