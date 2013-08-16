@@ -82,8 +82,6 @@ filetype plugin indent on
 "
 "set nocompatible
 "
-"set number
-"set ruler
 "set clipboard=unnamed
 "let g:ConqueTerm_InsertOnEnter = 0
 "syntax on
@@ -193,11 +191,6 @@ filetype plugin indent on
 "" Command mode: Ctrl+P
 "cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 "
-"" Use ctrl-[hjkl] to select the active split!
-"nmap <silent> <c-k> :wincmd k<CR>
-"nmap <silent> <c-j> :wincmd j<CR>
-"nmap <silent> <c-h> :wincmd h<CR>
-"nmap <silent> <c-l> :wincmd l<CR>
 "" Unimpaired configuration
 "" Bubble single lines
 "nmap <C-Up> [e
