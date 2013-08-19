@@ -1,28 +1,42 @@
+set nocompatible        " use vim defaults
 set ch=2                " Make command line two lines high
 set history=1000        " Set history size to allow searching of previous commands
 set mousehide           " Hide the mouse when typing text
 set number             " turn on line numbers
 set ruler              " turn on ruler
-set laststatus=2
+set laststatus=2       " status bar
 set vb                 " use a visual bell
-set nobackup
-set nowritebackup
-set nowrap
 set autoindent
-set list listchars=tab:\>\ ,trail:·
-set tabstop=2
-set expandtab
-set softtabstop=4
-set shiftwidth=4
-set clipboard=unnamed
+set clipboard=unnamed  " copy to system clipboard
 set background=dark
 set t_Co=8
+
+" whitespace stuff
+set nowrap
+set tabstop=2
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set list listchars=tab:\>\ ,trail:·
+
+" directories for swp files
+set backupdir=~/.vim/backup
+set directory=~/.vim/backup
+
+
 :hi Normal ctermbg=white
-colorscheme torte 
+
+" default color scheme
+colorscheme torte
+
+"highlight NonText cterm=none ctermfg=0 guifg=#073642
+"highlight NonText cterm=none ctermfg=2 guifg=#e82343
+hi NonText term=bold ctermfg=3 guifg=#0000c0
 " Switch on syntax highlighting if it wasn't on yet.
 if !exists("syntax_on")
   syntax on
 endif
+
 " Switch on search pattern highlighting.
 set hlsearch
 set incsearch
@@ -31,19 +45,37 @@ set smartcase
 
 " Show relative paths in buffer explorer.
 let g:bufExplorerShowRelativePath=1  
+
+" \h turns off highlighting
+map <Leader>h :noh<CR>
+
+" NERDTree configuration
+"let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
 " allow vcscommand to operate on directory
 let g:NERDTreeHijackNetrw = 0
 " \n toggles the nerd tree
 map <Leader>n :NERDTreeToggle<CR>
-" \h turns off highlighting
-map <Leader>h :noh<CR>
 
+" Command-T configuration
+let g:CommandTMaxHeight=20
+
+" cursor color/shape
 if &term =~ "xterm"
-  "let &t_SI = "\<Esc>]12;purple\x7"
-  "let &t_EI = "\<Esc>]12;blue\x7"
-  let &t_SI = "\033]12;purple\007"
-  let &t_EI = "\033]12;blue\007"
+  let &t_SI = "\<Esc>]12;purple\x7" " insert mode
+  let &t_EI = "\<Esc>]12;blue\x7"
+  "let &t_SI = "\033]12;purple\007"
+  "let &t_EI = "\033]12;blue\007"
+
+  " 1 or 0 -> blinking block
+  " 2 -> solid block
+  " 3 -> blinking underscore
+  " 4 -> solid underscore
+  " 5 -> blinking vertical bar
+  " 6 -> solid vertical bar
+  let &t_SI .= "\<Esc>[4 q" " solid underscore
+  let &t_EI .= "\<Esc>[2 q" " solid block
 endif
+
 " use ii to exit insert mode
 :imap ii <Esc>
 
@@ -76,26 +108,13 @@ filetype plugin indent on
 
 
 
-
-
-" new stuff....
 "
-"set nocompatible
-"
-"set clipboard=unnamed
 "let g:ConqueTerm_InsertOnEnter = 0
 "syntax on
 "
 "" Set encoding
 "set encoding=utf-8
 "
-"" Whitespace stuff
-"set nowrap
-"set tabstop=2
-"set shiftwidth=2
-"set softtabstop=2
-"set expandtab
-"set list listchars=tab:\ \ ,trail:·
 "
 "" * Window Splits
 "" Open new horizontal windows below.
@@ -104,30 +123,18 @@ filetype plugin indent on
 "set splitright
 "
 "
-"" Searching
-"set hlsearch
-"set incsearch
-"set ignorecase
-"set smartcase
 "
 "" Tab completion
 "set wildmode=list:longest,list:full
 "set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
 "
-"" Status bar
-"set laststatus=2
 "
 "" Without setting this, ZoomWin restores windows in a way that causes
 "" equalalways behavior to be triggered the next time CommandT is used.
 "" This is likely a bludgeon to solve some other issue, but it works
 "set noequalalways
 "
-"" NERDTree configuration
-"let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
-"map <Leader>n :NERDTreeToggle<CR>
 "
-"" Command-T configuration
-"let g:CommandTMaxHeight=20
 "
 "" ZoomWin configuration
 "map <Leader><Leader> :ZoomWin<CR>
@@ -216,15 +223,10 @@ filetype plugin indent on
 "set modeline
 "set modelines=10
 "
-"" Default color scheme
-"color torte
 "
 "" Make non-selected window's status bars readable
 "autocmd ColorScheme * highlight StatusLineNC guifg=#555555 guibg=#202020
 "
-"" Directories for swp files
-"set backupdir=~/.vim/backup
-"set directory=~/.vim/backup
 "
 "" Turn off jslint errors by default
 "let g:JSLintHighlightErrorLine = 0
