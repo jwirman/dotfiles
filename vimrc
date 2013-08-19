@@ -34,13 +34,13 @@ set directory=~/.vim/backup
 " default color scheme
 colorscheme torte
 
-"highlight NonText cterm=none ctermfg=2 guifg=#e82343
-hi NonText term=bold ctermfg=Red guifg=#0000c0
-
 " Switch on syntax highlighting if it wasn't on yet.
 if !exists("syntax_on")
   syntax on
 endif
+
+" highlight for NonText group (tabs, spaces, eol)
+hi NonText term=bold cterm=bold ctermfg=Red gui=bold guifg=Blue
 
 " Switch on search pattern highlighting.
 set hlsearch
@@ -103,9 +103,9 @@ map ,* :s/^\(.*\)$/\/\* \1 \*\//<CR><Esc>:nohlsearch<CR>
 " scss syntax highlighting
 au BufRead,BufNewFile *.scss set filetype=scss
 
-" remove trailing whitespace from ruby files 
-autocmd BufWritePre *.rb :%s/\s\+$//e
-"autocmd FileType rb,erb autocmd BufWritePre <buffer> :%s/\s\+$//e
+" remove trailing whitespace from ruby files
+"autocmd BufWritePre *.rb :%s/\s\+$//e
+autocmd FileType rb,erb autocmd BufWritePre <buffer> :%s/\s\+$//e
 
 " load the plugin and indent settings for the detected filetype
 filetype plugin indent on
