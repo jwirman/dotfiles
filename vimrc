@@ -1,17 +1,22 @@
-set nocompatible        " use vim defaults
-set ch=2                " Make command line two lines high
-set history=1000        " Set history size to allow searching of previous commands
-set mousehide           " Hide the mouse when typing text
+set nocompatible       " use vim defaults
+set ch=2               " make command line two lines high
+set history=1000       " set history size to allow searching of previous commands
+set mousehide          " hide the mouse when typing text
 set number             " turn on line numbers
 set ruler              " turn on ruler
 set laststatus=2       " status bar
+set showcmd            " show (partial) command in the status bar
 set vb                 " use a visual bell
-set autoindent
 set clipboard=unnamed  " copy to system clipboard
 set background=dark
 set t_Co=8
 
+" window splits
+set splitbelow     " open new horizontal windows below.
+set splitright     " open new vertical windows to the right.
+
 " whitespace stuff
+set autoindent     " copy indent on new line
 set nowrap
 set tabstop=2
 set shiftwidth=4
@@ -29,9 +34,9 @@ set directory=~/.vim/backup
 " default color scheme
 colorscheme torte
 
-"highlight NonText cterm=none ctermfg=0 guifg=#073642
 "highlight NonText cterm=none ctermfg=2 guifg=#e82343
-hi NonText term=bold ctermfg=3 guifg=#0000c0
+hi NonText term=bold ctermfg=Red guifg=#0000c0
+
 " Switch on syntax highlighting if it wasn't on yet.
 if !exists("syntax_on")
   syntax on
@@ -108,20 +113,11 @@ filetype plugin indent on
 
 
 
-"
 "let g:ConqueTerm_InsertOnEnter = 0
 "syntax on
 "
 "" Set encoding
 "set encoding=utf-8
-"
-"
-"" * Window Splits
-"" Open new horizontal windows below.
-"set splitbelow
-"" Open new vertical windows to the right.
-"set splitright
-"
 "
 "
 "" Tab completion
@@ -133,8 +129,6 @@ filetype plugin indent on
 "" equalalways behavior to be triggered the next time CommandT is used.
 "" This is likely a bludgeon to solve some other issue, but it works
 "set noequalalways
-"
-"
 "
 "" ZoomWin configuration
 "map <Leader><Leader> :ZoomWin<CR>
@@ -160,9 +154,6 @@ filetype plugin indent on
 "  map <buffer> <Leader>p :Hammer<CR>
 "endfunction
 "
-"" History.
-"set history=100
-"
 "" make uses real tabs
 "au FileType make set noexpandtab
 "
@@ -177,8 +168,6 @@ filetype plugin indent on
 "
 "au BufRead,BufNewFile *.txt call s:setupWrapping()
 "
-"" make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
-"au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 "
 "" allow backspacing over everything in insert mode
 "set backspace=indent,eol,start
@@ -237,8 +226,6 @@ filetype plugin indent on
 "" % to bounce from do to end etc.
 "runtime! macros/matchit.vim
 "
-"" Show (partial) command in the status line
-"set showcmd
 "
 "augroup BWCCreateDir
 "  au!
