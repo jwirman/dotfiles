@@ -22,14 +22,14 @@ set tabstop=2
 set shiftwidth=4
 set softtabstop=4
 set expandtab
-set list listchars=tab:\>\ ,trail:·
+"set list listchars=nbsp:¬,tab:\>\ ,trail:·
+"set list listchars=nbsp:¬,eol:¶,tab:>-,extends:»,precedes:«,trail:•
+set list listchars=nbsp:¬,tab:>-,extends:»,precedes:«,trail:·
 
 " directories for swp files
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 
-
-:hi Normal ctermbg=white
 
 " default color scheme
 colorscheme torte
@@ -39,8 +39,9 @@ if !exists("syntax_on")
   syntax on
 endif
 
-" highlight for NonText group (tabs, spaces, eol)
-hi NonText term=bold cterm=bold ctermfg=Red gui=bold guifg=Blue
+" highlight for NonText/SpecialKey groups (tabs, spaces, eol)
+hi NonText term=NONE cterm=NONE ctermfg=Red gui=NONE guifg=Red
+hi SpecialKey term=NONE cterm=NONE ctermfg=Red gui=NONE guifg=Red
 
 " Switch on search pattern highlighting.
 set hlsearch
