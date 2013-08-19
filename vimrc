@@ -107,10 +107,14 @@ au BufRead,BufNewFile *.scss set filetype=scss
 autocmd BufWritePre *.rb :%s/\s\+$//e
 "autocmd FileType rb,erb autocmd BufWritePre <buffer> :%s/\s\+$//e
 
-" to get coffee.vim to work...
+" load the plugin and indent settings for the detected filetype
 filetype plugin indent on
 
-
+" remember last location in file
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+    \| exe "normal g'\"" | endif
+endif
 
 
 "let g:ConqueTerm_InsertOnEnter = 0
@@ -136,13 +140,8 @@ filetype plugin indent on
 "" CTags
 "map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 "map <C-\> :tnext<CR>
-"
-"" Remember last location in file
-"if has("autocmd")
-"  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
-"    \| exe "normal g'\"" | endif
-"endif
-"
+
+
 "function s:setupWrapping()
 "  set wrap
 "  set wrapmargin=2
@@ -172,8 +171,6 @@ filetype plugin indent on
 "" allow backspacing over everything in insert mode
 "set backspace=indent,eol,start
 "
-"" load the plugin and indent settings for the detected filetype
-"filetype plugin indent on
 "
 "" Opens an edit command with the path of the currently edited file filled in
 "" Normal mode: <Leader>e
