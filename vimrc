@@ -109,8 +109,9 @@ map ,* :s/^\(.*\)$/\/\* \1 \*\//<CR><Esc>:nohlsearch<CR>
 au BufRead,BufNewFile *.scss set filetype=scss
 
 " remove trailing whitespace from ruby files
-"autocmd BufWritePre *.rb :%s/\s\+$//e
-autocmd FileType rb,erb autocmd BufWritePre <buffer> :%s/\s\+$//e
+autocmd BufWritePre *.rb :%s/\s\+$//e
+autocmd BufWritePre *.erb :%s/\s\+$//e
+"autocmd FileType rb,erb autocmd BufWritePre <buffer> :%s/\s\+$//e
 
 " load the plugin and indent settings for the detected filetype
 filetype plugin indent on
