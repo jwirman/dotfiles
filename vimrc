@@ -10,6 +10,7 @@ set laststatus=2       " status bar
 set showcmd            " show (partial) command in the status bar
 set vb                 " use a visual bell
 set clipboard=unnamed  " copy to system clipboard
+set backspace=indent,eol,start " allow backspacing over everything in insert mode
 set background=dark
 set t_Co=8
 
@@ -24,8 +25,7 @@ set tabstop=2
 set shiftwidth=4
 set softtabstop=4
 set expandtab
-"set list listchars=nbsp:¬,tab:\>\ ,trail:·
-"set list listchars=nbsp:¬,eol:¶,tab:>-,extends:»,precedes:«,trail:•
+"set list listchars=tab:\>\ ,eol:¶,trail:•
 set list listchars=nbsp:¬,tab:>-,extends:»,precedes:«,trail:·
 
 " directories for swp files
@@ -173,8 +173,6 @@ endif
 "au BufRead,BufNewFile *.txt call s:setupWrapping()
 "
 "
-"" allow backspacing over everything in insert mode
-"set backspace=indent,eol,start
 "
 "
 "" Opens an edit command with the path of the currently edited file filled in
