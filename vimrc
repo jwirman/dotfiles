@@ -1,3 +1,5 @@
+execute pathogen#infect()
+
 set nocompatible       " use vim defaults
 set ch=2               " make command line two lines high
 set history=1000       " set history size to allow searching of previous commands
