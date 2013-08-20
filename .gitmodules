@@ -13,3 +13,6 @@
 [submodule "vim/bundle/nerdtree"]
 	path = vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/bundle/endwise"]
+	path = vim/bundle/endwise
+	url = git://github.com/tpope/vim-endwise.git
