@@ -57,6 +57,8 @@ let g:bufExplorerShowRelativePath=1
 " \h turns off highlighting
 map <Leader>h :noh<CR>
 
+command! Rroutes :e config/routes.rb
+
 " NERDTree configuration
 "let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
 " allow vcscommand to operate on directory
