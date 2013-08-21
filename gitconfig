@@ -1,11 +1,15 @@
 [user]
 	name = jwirman
 	email = jwirman@gmail.com
+[github]
+	user = jwirman
 [core]
 	autocrlf = input
-	excludesfile = /Users/justin/.gitignore
+	editor = vim
+	excludesfile = ~/.gitignore
 	sharedRepository = all
 [color]
+	ui = auto
 	grep = auto
 	branch = auto
 	diff = auto
@@ -14,9 +18,10 @@
 	renames = true
 [alias]
   co = checkout
-  ci = commit
+  ci = commit -m
   st = status
   br = branch
+  a = add
 	d = diff
 	dfc = diff --cached
 	gpr = pull --rebase
