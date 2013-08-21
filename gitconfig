@@ -29,6 +29,7 @@
   type = cat-file -t
   dump = cat-file -p
   week = log --all --pretty --since='7 days ago'
+  report = log --pretty=format:'%h    %ai    %cn \n    - %s'
 	ls = log --graph --color --pretty=\"format:%C(yellow)%h%Creset%C(green)%d%Creset %s %Cblue[%aN]%Creset %C(magenta){%cr}%Creset\"
 	la = log --graph --color --pretty=\"format:%C(yellow)%h%Creset%C(green)%d%Creset %s %Cblue[%aN]%Creset %C(magenta){%cr}%Creset\" --all
 [grep]
