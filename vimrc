@@ -26,8 +26,7 @@ set tabstop=2
 set shiftwidth=4
 set softtabstop=4
 set expandtab
-"set list listchars=tab:\>\ ,eol:¶,trail:•
-set list listchars=nbsp:¬,tab:>-,extends:»,precedes:«,trail:·
+set list listchars=nbsp:¬,tab:\>\ ,extends:»,precedes:«,trail:· " eol:¶,trail:•
 
 " directories for swp files
 set backupdir=~/.vim/backup
