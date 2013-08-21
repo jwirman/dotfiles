@@ -46,3 +46,6 @@
 [submodule "vim/bundle/zoomwin"]
 	path = vim/bundle/zoomwin
 	url = git://github.com/regedarek/ZoomWin.git
+[submodule "vim/bundle/floobits"]
+	path = vim/bundle/floobits
+	url = https://github.com/Floobits/floobits-vim
