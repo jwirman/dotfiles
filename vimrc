@@ -11,8 +11,9 @@ set showcmd            " show (partial) command in the status bar
 set vb                 " use a visual bell
 set clipboard=unnamed  " copy to system clipboard
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
-set background=dark
-set t_Co=8
+set background=dark    " tell vim I like a dark background
+set t_Co=8             " only use 8 colors
+colorscheme torte      " default color scheme
 
 " window splits
 set splitbelow     " open new horizontal windows below.
@@ -32,10 +33,6 @@ set list listchars=nbsp:¬,tab:>-,extends:»,precedes:«,trail:·
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 
-
-" default color scheme
-colorscheme torte
-
 " Switch on syntax highlighting if it wasn't on yet.
 if !exists("syntax_on")
   syntax on
@@ -44,6 +41,7 @@ endif
 " highlight for NonText/SpecialKey groups (tabs, spaces, eol)
 hi NonText term=NONE cterm=NONE ctermfg=Red gui=NONE guifg=Red
 hi SpecialKey term=NONE cterm=NONE ctermfg=Red gui=NONE guifg=Red
+"hi Normal ctermfg=grey ctermbg=black
 
 " Switch on search pattern highlighting.
 set hlsearch
