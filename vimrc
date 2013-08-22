@@ -23,8 +23,8 @@ set splitright     " open new vertical windows to the right.
 set autoindent     " copy indent on new line
 set nowrap
 set tabstop=2
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 set list listchars=nbsp:¬,tab:\>\ ,extends:»,precedes:«,trail:· " eol:¶,trail:•
 
