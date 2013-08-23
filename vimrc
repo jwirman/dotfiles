@@ -119,6 +119,13 @@ if has("autocmd")
     \| exe "normal g'\"" | endif
 endif
 
+" \v to edit vimrc
+nmap <leader>v :edit $MYVIMRC<CR>
+" source vimrc file after saving it
+if has("autocmd")
+  autocmd! BufWritePost .vimrc source $MYVIMRC
+endif
+
 
 "let g:ConqueTerm_InsertOnEnter = 0
 "syntax on
