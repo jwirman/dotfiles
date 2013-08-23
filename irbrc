@@ -1,5 +1,6 @@
 require "rubygems"
 require "awesome_print"
+require 'interactive_editor'
 
 unless IRB.version.include?('DietRB')
   IRB::Irb.class_eval do
