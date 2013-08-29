@@ -28,14 +28,15 @@ export NODE_PATH=/usr/local/share/npm/lib/node_modules
 # misc
 alias ..="cd .."
 alias ...="cd .. ; cd .."
+alias c='clear'
 #alias ls='ls -G'
 #alias ll='ls -lG'
 alias ll='ls -la'
 alias vim='vim -c :NERDTree'
 #alias gvim='/homebrew/Cellar/macvim/7.3-64/MacVim.app/Contents/MacOS/Vim -g'
 #alias gvim='/Applications/MacVim.app/Contents/MacOS/Vim -gc NERDTree'
-alias ss='script/server'
-alias sc='script/console'
+alias rs='bundle exec rails server'
+alias rc='bundle exec rails console'
 alias jsc='/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources/jsc'
 alias psef='ps -ef | grep'
 #alias rtags="find . -name '*.rb' | xargs ctags -a"
