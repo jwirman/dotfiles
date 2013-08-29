@@ -9,7 +9,9 @@ set ruler              " turn on ruler
 set laststatus=2       " status bar
 set showcmd            " show (partial) command in the status bar
 set vb                 " use a visual bell
-set clipboard=unnamed  " copy to system clipboard
+if $TMUX == ''
+  set clipboard+=unnamed " copy to system clipboard
+endif
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 set background=dark    " tell vim I like a dark background
 set t_Co=8             " only use 8 colors
