@@ -15,6 +15,7 @@ export LESS="-ErX"
 #export PATH=~/homebrew/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/share/npm/bin:$PATH
+export PATH=.bundle/bin:$PATH
 export NODE_PATH=/usr/local/share/npm/lib/node_modules
 #export RUBY_HEAP_MIN_SLOTS=4000000
 #export RUBY_HEAP_SLOTS_INCREMENT=250000
@@ -35,7 +36,6 @@ alias ll='ls -la'
 alias vim='vim -c :NERDTree'
 #alias gvim='/homebrew/Cellar/macvim/7.3-64/MacVim.app/Contents/MacOS/Vim -g'
 #alias gvim='/Applications/MacVim.app/Contents/MacOS/Vim -gc NERDTree'
-alias rake='bundle exec rake'
 alias rs='bundle exec rails server'
 alias rc='bundle exec rails console'
 alias jsc='/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources/jsc'
@@ -45,7 +45,7 @@ alias psef='ps -ef | grep'
 
 # bundler
 alias b='bundle'
-alias bi='b install --path vendor/bundle --binstubs'
+alias bi='b install --path .bundle --binstubs .bundle/bin'
 alias bil='bi --local'
 alias bu='b update'
 alias bp='b package'
