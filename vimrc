@@ -58,6 +58,12 @@ map <Leader>h :noh<CR>
 
 command! Rroutes :e config/routes.rb
 
+" RSpec.vim mappings
+map <Leader>f :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+
 " NERDTree configuration
 "let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
 " allow vcscommand to operate on directory
