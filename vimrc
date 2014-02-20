@@ -50,6 +50,8 @@ set incsearch
 set ignorecase
 set smartcase
 
+let @p='ip "*"*80pp "*"*80k'
+
 " Show relative paths in buffer explorer.
 let g:bufExplorerShowRelativePath=1  
 
