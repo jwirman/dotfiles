@@ -9,6 +9,9 @@ set ruler              " turn on ruler
 set laststatus=2       " status bar
 set showcmd            " show (partial) command in the status bar
 set vb                 " use a visual bell
+set timeout            " use a timeout for mappings/key codes
+set timeoutlen=3000    " wait 3 seconds for mapping
+set ttimeoutlen=100    " wait tenth of a second for key codes
 if $TMUX == ''
   set clipboard+=unnamed " copy to system clipboard
 endif
