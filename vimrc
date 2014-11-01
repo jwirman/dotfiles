@@ -113,6 +113,10 @@ nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-k> :wincmd k<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
+" move up/down one line even for wrapped lines
+:nmap j gj
+:nmap k gk
+
 " , #perl # comments
 map ,# :s/^/#/<CR>
 " ,/ C/C++/C#/Java // comments
