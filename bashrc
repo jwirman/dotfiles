@@ -14,6 +14,7 @@ export LESS="-ErX"
 #export PS1="[\u@local:\W:(\$(git branch 2>/dev/null | grep '^*' | colrm 1 2))]\$ "
 #export PATH=~/homebrew/bin:$PATH
 export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/share/npm/bin:$PATH
 export PATH=.bundle/bin:$PATH
 export NODE_PATH=/usr/local/share/npm/lib/node_modules
