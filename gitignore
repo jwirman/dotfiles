@@ -1,6 +1,6 @@
 # osx files
 .DS\_Store
 # vim temp files
-*.sw?
+*.swp
 # rbenv settings
-.ruby-version
+#.ruby-version
