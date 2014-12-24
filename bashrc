@@ -3,7 +3,7 @@ umask 002 # permissions for new files/directories
 shopt -s histappend
 
 # environment variables
-export JAVA_HOME=/Library/Java/Home
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export CLICOLOR=1
 export LSCOLORS=Exfxcxdxbxegedabagacad
 export EDITOR='vim'
