@@ -16,6 +16,7 @@ export LESS="-ErX"
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/share/npm/bin:$PATH
+export PATH=/usr/local/heroku/bin:$PATH
 export PATH=.bundle/bin:$PATH
 export NODE_PATH=/usr/local/share/npm/lib/node_modules
 #export RUBY_HEAP_MIN_SLOTS=4000000
