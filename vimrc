@@ -130,10 +130,11 @@ map ,* :s/^\(.*\)$/\/\* \1 \*\//<CR><Esc>:nohlsearch<CR>
 " scss syntax highlighting
 au BufRead,BufNewFile *.scss set filetype=scss
 
-" remove trailing whitespace from ruby and haml files
-autocmd BufWritePre *.rb :%s/\s\+$//e
-autocmd BufWritePre *.erb :%s/\s\+$//e
+" remove trailing whitespace from ruby, haml, and js files
+autocmd BufWritePre *.rb   :%s/\s\+$//e
+autocmd BufWritePre *.erb  :%s/\s\+$//e
 autocmd BufWritePre *.haml :%s/\s\+$//e
+autocmd BufWritePre *.js   :%s/\s\+$//e
 "autocmd FileType rb,erb autocmd BufWritePre <buffer> :%s/\s\+$//e
 
 " load the plugin and indent settings for the detected filetype
