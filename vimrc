@@ -63,6 +63,9 @@ map <Leader>h :noh<CR>
 
 command! Rroutes :e config/routes.rb
 
+" send specs to tmux session
+let g:rspec_command = 'call Send_to_Tmux("spring rspec {spec}\n")'
+
 " RSpec.vim mappings
 map <Leader>f :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
