@@ -54,6 +54,7 @@ set ignorecase
 set smartcase
 
 let @p='ip "*"*80pp "*"*80k'
+let @l='iRails.logger.warn "*"*80Rails.logger.warn Rails.logger.warn "*"*80k'
 
 " Show relative paths in buffer explorer.
 let g:bufExplorerShowRelativePath=1  
