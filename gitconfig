@@ -40,5 +40,3 @@
   default = simple
 [credential]
   helper = osxkeychain
-[branch]
-	autosetupmerge = always
