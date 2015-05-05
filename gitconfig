@@ -1,42 +1,44 @@
 [user]
-	name = jwirman
-	email = jwirman@gmail.com
+  name = jwirman
+  email = jwirman@gmail.com
 [github]
-	user = jwirman
+  user = jwirman
 [core]
-	autocrlf = input
-	editor = vim
-	excludesfile = ~/.gitignore
-	sharedRepository = all
+  autocrlf = input
+  editor = vim
+  excludesfile = ~/.gitignore
+  sharedRepository = all
 [color]
-	ui = auto
-	grep = auto
-	branch = auto
-	diff = auto
-	status = auto
+  ui = auto
+  grep = auto
+  branch = auto
+  diff = auto
+  status = auto
 [diff]
-	renames = true
+  renames = true
 [alias]
   co = checkout
   ci = commit -m
   st = status
   br = branch
   a = add
-	d = diff
-	dfc = diff --cached
-	gpr = pull --rebase
+  d = diff
+  dfc = diff --cached
+  gpr = pull --rebase
   hist = log --pretty=oneline --abbrev-commit --graph --decorate
   type = cat-file -t
   dump = cat-file -p
   week = log --all --pretty --since='7 days ago'
   report = log --pretty=format:'%h    %ai    %cn \n    - %s'
-	ls = log --graph --color --pretty=\"format:%C(yellow)%h%Creset%C(green)%d%Creset %s %Cblue[%aN]%Creset %C(magenta){%cr}%Creset\"
-	la = log --graph --color --pretty=\"format:%C(yellow)%h%Creset%C(green)%d%Creset %s %Cblue[%aN]%Creset %C(magenta){%cr}%Creset\" --all
+  ls = log --graph --color --pretty=\"format:%C(yellow)%h%Creset%C(green)%d%Creset %s %Cblue[%aN]%Creset %C(magenta){%cr}%Creset\"
+  la = log --graph --color --pretty=\"format:%C(yellow)%h%Creset%C(green)%d%Creset %s %Cblue[%aN]%Creset %C(magenta){%cr}%Creset\" --all
 [grep]
-	lineNumber = true
+  lineNumber = true
 [merge]
-	tool = vimdiff
+  tool = vimdiff
 [push]
-	default = simple
+  default = simple
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
+[branch]
+	autosetupmerge = always
