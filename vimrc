@@ -1,5 +1,6 @@
 execute pathogen#infect()
 
+set encoding=utf-8     " set encoding
 set nocompatible       " use vim defaults
 set ch=2               " make command line two lines high
 set history=1000       " set history size to allow searching of previous commands
@@ -157,19 +158,15 @@ if has("autocmd")
   autocmd! BufWritePost .vimrc source $MYVIMRC
 endif
 
+" Make non-selected window's status bars readable
+autocmd ColorScheme * highlight StatusLineNC guifg=#555555 guibg=#202020
 
 "let g:ConqueTerm_InsertOnEnter = 0
 "syntax on
 "
-"" Set encoding
-"set encoding=utf-8
-"
-"
 "" Tab completion
 "set wildmode=list:longest,list:full
 "set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
-"
-"
 "
 "" CTags
 "map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
@@ -200,8 +197,6 @@ endif
 "au BufNewFile,BufRead *.json set ft=javascript
 "
 "au BufRead,BufNewFile *.txt call s:setupWrapping()
-"
-"
 "
 "
 "" Opens an edit command with the path of the currently edited file filled in
@@ -240,10 +235,6 @@ endif
 "" Use modeline overrides
 "set modeline
 "set modelines=10
-"
-"
-"" Make non-selected window's status bars readable
-"autocmd ColorScheme * highlight StatusLineNC guifg=#555555 guibg=#202020
 "
 "
 "" Turn off jslint errors by default
