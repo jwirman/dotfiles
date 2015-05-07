@@ -46,6 +46,11 @@ alias psef='ps -ef | grep'
 #alias rtags="find . -name '*.rb' | xargs ctags -a"
 #alias stalk='ps auxwww | head -n 1; ps auxwww | grep -v "grep -i" | grep -i '
 
+# ID.me apps
+alias iva='cd ~/src/IDme/idme-verification/'
+alias idp='cd ~/src/IDme/idme-idp/'
+alias admin='cd ~/src/IDme/idme-admin/'
+
 # bundler
 alias b='bundle'
 alias bi='b install --path .bundle --binstubs .bundle/bin'
