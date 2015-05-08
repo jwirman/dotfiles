@@ -142,6 +142,9 @@ autocmd BufWritePre *.haml :%s/\s\+$//e
 autocmd BufWritePre *.js   :%s/\s\+$//e
 "autocmd FileType rb,erb autocmd BufWritePre <buffer> :%s/\s\+$//e
 
+" Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
+"au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru} set ft=ruby
+
 " load the plugin and indent settings for the detected filetype
 filetype plugin indent on
 
@@ -162,7 +165,6 @@ endif
 autocmd ColorScheme * highlight StatusLineNC guifg=#555555 guibg=#202020
 
 "let g:ConqueTerm_InsertOnEnter = 0
-"syntax on
 "
 "" Tab completion
 "set wildmode=list:longest,list:full
@@ -186,9 +188,6 @@ autocmd ColorScheme * highlight StatusLineNC guifg=#555555 guibg=#202020
 "
 "" make uses real tabs
 "au FileType make set noexpandtab
-"
-"" Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
-"au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set ft=ruby
 "
 "" md, markdown, and mk are markdown and define buffer-local preview
 "au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
