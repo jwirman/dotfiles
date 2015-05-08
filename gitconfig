@@ -16,6 +16,9 @@
   status = auto
 [diff]
   renames = true
+  tool = vimdiff
+[difftool]
+  prompt = false
 [alias]
   co = checkout
   ci = commit -m
