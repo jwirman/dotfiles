@@ -35,6 +35,7 @@
   report = log --pretty=format:'%h    %ai    %cn \n    - %s'
   ls = log --graph --color --pretty=\"format:%C(yellow)%h%Creset%C(green)%d%Creset %s %Cblue[%aN]%Creset %C(magenta){%cr}%Creset\"
   la = log --graph --color --pretty=\"format:%C(yellow)%h%Creset%C(green)%d%Creset %s %Cblue[%aN]%Creset %C(magenta){%cr}%Creset\" --all
+  unstage = reset HEAD --
 [grep]
   lineNumber = true
 [merge]
