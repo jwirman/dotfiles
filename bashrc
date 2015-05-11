@@ -50,6 +50,7 @@ alias psef='ps -ef | grep'
 alias iva='cd ~/src/IDme/idme-verification/'
 alias idp='cd ~/src/IDme/idme-idp/'
 alias admin='cd ~/src/IDme/idme-admin/'
+alias data='cd ~/src/IDme/idme-data/'
 
 # bundler
 alias b='bundle'
