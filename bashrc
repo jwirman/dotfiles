@@ -65,6 +65,7 @@ alias binit="bi && bp && echo 'vendor/bundle' >> .gitignore"
 alias gs='git status'
 alias gsl='git stash list'
 alias gsp='git stash pop'
+alias gss='git stash save'
 alias ga='git add'
 alias gb='git branch'
 alias gc='git commit'
