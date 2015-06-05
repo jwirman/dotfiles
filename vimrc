@@ -54,6 +54,9 @@ set incsearch
 set ignorecase
 set smartcase
 
+" use space bar as leader
+let mapleader = "\<Space>"
+
 let @p='ip "*"*80pp "*"*80k'
 let @l='iRails.logger.warn "*"*80Rails.logger.warn Rails.logger.warn "*"*80k'
 
@@ -66,7 +69,8 @@ map <Leader>h :noh<CR>
 command! Rroutes :e config/routes.rb
 
 " send specs to tmux session
-let g:rspec_command = 'call Send_to_Tmux("bundle exec spring rspec {spec}\n")'
+"let g:rspec_command = 'call Send_to_Tmux("bundle exec spring rspec {spec}\n")'
+let g:rspec_command = 'call Send_to_Tmux("bundle exec rspec {spec}\n")'
 
 " RSpec.vim mappings
 map <Leader>f :call RunCurrentSpecFile()<CR>
@@ -136,10 +140,13 @@ map ,* :s/^\(.*\)$/\/\* \1 \*\//<CR><Esc>:nohlsearch<CR>
 au BufRead,BufNewFile *.scss set filetype=scss
 
 " remove trailing whitespace from ruby, haml, and js files
-autocmd BufWritePre *.rb   :%s/\s\+$//e
-autocmd BufWritePre *.erb  :%s/\s\+$//e
-autocmd BufWritePre *.haml :%s/\s\+$//e
-autocmd BufWritePre *.js   :%s/\s\+$//e
+autocmd BufWritePre *.rb      :%s/\s\+$//e
+autocmd BufWritePre *.erb     :%s/\s\+$//e
+autocmd BufWritePre *.haml    :%s/\s\+$//e
+autocmd BufWritePre *.js      :%s/\s\+$//e
+autocmd BufWritePre *.yml     :%s/\s\+$//e
+autocmd BufWritePre *.feature :%s/\s\+$//e
+autocmd BufWritePre *.coffee  :%s/\s\+$//e
 "autocmd FileType rb,erb autocmd BufWritePre <buffer> :%s/\s\+$//e
 
 " Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
