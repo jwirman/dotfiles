@@ -19,6 +19,11 @@
   tool = vimdiff
 [difftool]
   prompt = false
+[merge]
+  tool = vimdiff
+  conflictstyle = diff3
+[mergetool]
+  prompt = false
 [alias]
   co = checkout
   ci = commit -m
@@ -38,8 +43,6 @@
   unstage = reset HEAD --
 [grep]
   lineNumber = true
-[merge]
-  tool = vimdiff
 [push]
   default = simple
 [credential]
