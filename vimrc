@@ -63,8 +63,12 @@ let @l='iRails.logger.warn "*"*80Rails.logger.warn Rails.logger.warn "*"*80k'
 " Show relative paths in buffer explorer.
 let g:bufExplorerShowRelativePath=1  
 
-" \h turns off highlighting
+" quick turn off highlighting
 map <Leader>h :noh<CR>
+" quick buffer edit
+map <Leader>e <Leader>be
+" quick save file
+nnoremap <Leader>w :w<CR>
 
 command! Rroutes :e config/routes.rb
 
