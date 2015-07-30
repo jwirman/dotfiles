@@ -108,4 +108,4 @@ function km {
 # make prompt version control aware
 source ~/.bash_vcs.sh
 # tmux completion
-source ~/.tmuxinator.bash
+source ~/.tmuxinator/tmuxinator.bash
