@@ -69,6 +69,9 @@ map <Leader>h :noh<CR>
 map <Leader>e <Leader>be
 " quick save file
 nnoremap <Leader>w :w<CR>
+" use v to select char, then word, then paragraph
+vmap v <Plug>(expand_region_expand)
+vmap <C-v> <Plug>(expand_region_shrink)
 
 command! Rroutes :e config/routes.rb
 
@@ -146,6 +149,7 @@ au BufRead,BufNewFile *.scss set filetype=scss
 " remove trailing whitespace from ruby, haml, and js files
 autocmd BufWritePre *.rb      :%s/\s\+$//e
 autocmd BufWritePre *.erb     :%s/\s\+$//e
+autocmd BufWritePre *.rake    :%s/\s\+$//e
 autocmd BufWritePre *.haml    :%s/\s\+$//e
 autocmd BufWritePre *.js      :%s/\s\+$//e
 autocmd BufWritePre *.yml     :%s/\s\+$//e

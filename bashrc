@@ -51,6 +51,7 @@ alias iva='cd ~/src/IDme/idme-verification/'
 alias idp='cd ~/src/IDme/idme-idp/'
 alias admin='cd ~/src/IDme/idme-admin/'
 alias data='cd ~/src/IDme/idme-data/'
+alias capt='cd ~/src/IDme/captain-deploy/'
 
 # bundler
 alias b='bundle'
@@ -106,3 +107,5 @@ function km {
 
 # make prompt version control aware
 source ~/.bash_vcs.sh
+# tmux completion
+source ~/.tmuxinator.bash
