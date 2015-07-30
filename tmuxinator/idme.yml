@@ -1,7 +1,7 @@
 # ~/.tmuxinator/idme.yml
 
 name: idme
-root: ~/
+root: ~/src/IDme
 
 # Optional tmux socket
 # socket_name: foo
@@ -27,9 +27,11 @@ root: ~/
 # Runs after everything. Use it to attach to tmux with custom options etc.
 # post: tmux -CC attach -t idme
 
+tmux_options: -f ~/.tmux.conf
+
 windows:
-  - root: ~/src/IDme
   - editor:
+      root: ~/src/IDme/idme-admin
       layout: 4ea6,318x70,0,0[318x60,0,0,0,318x9,0,61{159x9,0,61,1,158x9,160,61,2}]
       panes:
         - vim
