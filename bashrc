@@ -47,6 +47,7 @@ alias psef='ps -ef | grep'
 #alias stalk='ps auxwww | head -n 1; ps auxwww | grep -v "grep -i" | grep -i '
 
 # ID.me apps
+alias hlp='cd ~/src/IDme/idme-hosted-pages/'
 alias iva='cd ~/src/IDme/idme-verification/'
 alias idp='cd ~/src/IDme/idme-idp/'
 alias admin='cd ~/src/IDme/idme-admin/'
