@@ -41,6 +41,7 @@ alias vim='vim -c :NERDTree'
 #alias gvim='/Applications/MacVim.app/Contents/MacOS/Vim -gc NERDTree'
 alias rs='bundle exec rails server'
 alias rc='bundle exec rails console'
+alias td='tail -f log/development.log'
 alias jsc='/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources/jsc'
 alias psef='ps -ef | grep'
 #alias rtags="find . -name '*.rb' | xargs ctags -a"
