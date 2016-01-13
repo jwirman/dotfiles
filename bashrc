@@ -111,3 +111,5 @@ function km {
 source ~/.bash_vcs.sh
 # tmux completion
 source ~/.tmuxinator/tmuxinator.bash
+# amazon cli completion
+complete -C aws_completer aws
