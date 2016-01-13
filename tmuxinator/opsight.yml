@@ -1,0 +1,39 @@
+# ~/.tmuxinator/opsight.yml
+
+name: opsight
+root: ~/src/opsight
+
+# Optional tmux socket
+# socket_name: foo
+
+# Runs before everything. Use it to start daemons etc.
+# pre: sudo /etc/rc.d/mysqld start
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
+# tmux_command: byobu
+
+# Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
+# startup_window: logs
+
+# Controls whether the tmux session should be attached to automatically. Defaults to true.
+# attach: false
+
+# Runs after everything. Use it to attach to tmux with custom options etc.
+# post: tmux -CC attach -t opsight
+
+tmux_options: -f ~/.tmux.conf
+
+windows:
+  - editor:
+      root: ~/src/opsight/portals
+      layout: 4ea6,318x70,0,0[318x60,0,0,0,318x9,0,61{159x9,0,61,1,158x9,160,61,2}]
+      panes:
+        - vim
+        - #empty, commandline
+        - rails c
