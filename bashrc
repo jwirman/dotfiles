@@ -53,6 +53,7 @@ alias iva='cd ~/src/IDme/idme-verification/'
 alias idp='cd ~/src/IDme/idme-idp/'
 alias admin='cd ~/src/IDme/idme-admin/'
 alias data='cd ~/src/IDme/idme-data/'
+alias oat='cd ~/src/IDme/idme-oauth-tester/'
 alias capt='cd ~/src/IDme/captain-deploy/'
 
 # bundler

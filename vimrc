@@ -104,7 +104,7 @@ set noequalalways
 map <Leader><Leader> :ZoomWin<CR>
 
 " cursor color/shape
-if &term =~ "xterm"
+if &term =~ "xterm" || &term =~ "screen"
   let &t_SI = "\<Esc>]12;purple\x7" " insert mode
   let &t_EI = "\<Esc>]12;blue\x7"
   "let &t_SI = "\033]12;purple\007"
