@@ -17,6 +17,7 @@
 [diff]
   renames = true
   tool = vimdiff
+  #compactionHeuristic = 1
 [difftool]
   prompt = false
 [merge]

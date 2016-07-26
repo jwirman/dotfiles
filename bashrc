@@ -41,7 +41,7 @@ alias vim='vim -c :NERDTree'
 #alias gvim='/Applications/MacVim.app/Contents/MacOS/Vim -gc NERDTree'
 alias rs='bundle exec rails server'
 alias rc='bundle exec rails console'
-alias td='tail -f log/development.log'
+alias tail='tail -f log/development.log'
 alias jsc='/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources/jsc'
 alias psef='ps -ef | grep'
 #alias rtags="find . -name '*.rb' | xargs ctags -a"
@@ -53,7 +53,7 @@ alias iva='cd ~/src/IDme/idme-verification/'
 alias idp='cd ~/src/IDme/idme-idp/'
 alias admin='cd ~/src/IDme/idme-admin/'
 alias data='cd ~/src/IDme/idme-data/'
-alias oat='cd ~/src/IDme/idme-oauth-tester/'
+alias td='cd ~/src/IDme/idme-test-drive/'
 alias capt='cd ~/src/IDme/captain-deploy/'
 
 # bundler
