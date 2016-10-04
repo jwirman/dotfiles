@@ -34,9 +34,17 @@ set softtabstop=2
 set expandtab
 set list listchars=nbsp:¬,tab:\>\ ,extends:»,precedes:«,trail:· " eol:¶,trail:•
 
-" directories for swp files
-set backupdir=~/.vim/backup
-set directory=~/.vim/backup
+" swap files (.swp) in a common location
+" // means use the file's full path
+set directory=~/.vim/backup//
+
+" backup files (~) in a common location if possible
+set backup
+set backupdir=~/.vim/backup/,~/tmp,.
+
+" turn on undo files, put them in a common location
+set undofile
+set undodir=~/.vim/undo/
 
 " Switch on syntax highlighting if it wasn't on yet.
 if !exists("syntax_on")
