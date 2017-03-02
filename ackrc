@@ -1,6 +1,6 @@
 # ignore files/directories
 --ignore-dir=coverage
---ignore-dir=vendor
+#--ignore-dir=vendor
 --ignore-dir=.bundle
 --ignore-dir=public/assets
 --ignore-dir=tmp
