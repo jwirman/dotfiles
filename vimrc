@@ -65,19 +65,22 @@ set smartcase
 " use space bar as leader
 let mapleader = "\<Space>"
 
+" skip to underscore or capital when moving by word
+call camelcasemotion#CreateMotionMappings('<leader>')
+
 let @p='ip "*"*80pp "*"*80k'
 nnoremap <leader>p op "*"*80<c-m>p <c-m>p "*"*80<esc>
 let @l='iRails.logger.warn "*"*80Rails.logger.warn Rails.logger.warn "*"*80k'
 
 " Show relative paths in buffer explorer.
-let g:bufExplorerShowRelativePath=1  
+let g:bufExplorerShowRelativePath=1
 
 " quick turn off highlighting
 map <Leader>h :noh<CR>
 " quick buffer edit
 map <Leader>e <Leader>be
 " quick save file
-nnoremap <Leader>w :w<CR>
+"nnoremap <Leader>w :w<CR>
 " use v to select char, then word, then paragraph
 vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)

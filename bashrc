@@ -49,10 +49,10 @@ alias psef='ps -ef | grep'
 
 # ID.me apps
 alias hlp='cd ~/src/IDme/idme-hosted-pages/'
-alias iva='cd ~/src/IDme/idme-verification/'
-alias idp='cd ~/src/IDme/idme-idp/'
-alias admin='cd ~/src/IDme/idme-admin/'
-alias data='cd ~/src/IDme/idme-data/'
+alias iva='cd ~/src/IDme/core/idme-verification/'
+alias idp='cd ~/src/IDme/core/idme-idp/'
+alias admin='cd ~/src/IDme/core/idme-admin/'
+alias data='cd ~/src/IDme/core/idme-data/'
 alias td='cd ~/src/IDme/idme-test-drive/'
 alias capt='cd ~/src/IDme/captain-deploy/'
 
