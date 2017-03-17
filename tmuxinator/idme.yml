@@ -31,9 +31,10 @@ tmux_options: -f ~/.tmux.conf
 
 windows:
   - editor:
-      root: ~/src/IDme/idme-admin
+      root: ~/src/IDme/core/idme-verification
       layout: 4ea6,318x70,0,0[318x60,0,0,0,318x9,0,61{159x9,0,61,1,158x9,160,61,2}]
       panes:
         - vim
-        - #empty, commandline
+        #- #empty, commandline
+        - psql idme_core
         - rails c
