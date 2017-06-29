@@ -88,3 +88,6 @@
 [submodule "vim/bundle/CamelCaseMotion"]
 	path = vim/bundle/CamelCaseMotion
 	url = git@github.com:bkad/CamelCaseMotion
+[submodule "vim/bundle/rhubarb"]
+	path = vim/bundle/rhubarb
+	url = https://github.com/tpope/vim-rhubarb.git
