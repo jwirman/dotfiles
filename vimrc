@@ -133,7 +133,7 @@ if &term =~ "xterm" || &term =~ "screen"
 endif
 
 " use ii to exit insert mode
-:imap ii <Esc>
+":imap ii <Esc>
 
 " use <ctrl-h,j,k,l> to select active window
 nmap <silent> <c-h> :wincmd h<CR>
