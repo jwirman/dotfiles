@@ -47,6 +47,12 @@ alias psef='ps -ef | grep'
 #alias rtags="find . -name '*.rb' | xargs ctags -a"
 #alias stalk='ps auxwww | head -n 1; ps auxwww | grep -v "grep -i" | grep -i '
 
+alias whatsmyip='curl ipinfo.io'
+# Opens current branch in github
+alias github='open https://github.com/IDme/$(basename `git rev-parse --show-toplevel`)/tree/$(git rev-parse --abbrev-ref HEAD)'
+# Opens current branch in jira
+alias jira='function _jira(){ open https://idmeinc.atlassian.net/browse/$(git rev-parse --abbrev-ref HEAD); };_jira'
+
 # ID.me apps
 alias hlp='cd ~/src/IDme/user/idme-hosted-pages/'
 alias iva='cd ~/src/IDme/core/idme-verification/'
