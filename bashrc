@@ -62,6 +62,7 @@ alias sup='cd ~/src/IDme/core/idme-support/'
 alias data='cd ~/src/IDme/core/idme-data/'
 alias td='cd ~/src/IDme/idme-test-drive/'
 alias capt='cd ~/src/IDme/captain-deploy/'
+alias arcs='cd ~/src/IDme/idme-arcs/'
 
 # bundler
 alias b='bundle'
@@ -92,6 +93,7 @@ alias gx='gitx --all'
 #alias gpfull='git pull && bundle && rake db:drop db:create:all db:migrate; rake db:seed; rake db:test:prepare test:hot:db:prepare; rake assets:clean RAILS_ENV=test; time rake test:hot && say done'
 alias gsu='git submodule update --init'
 alias log="git log --author=jwirman"
+alias del_local="git branch --merged master | grep -v '^[ *]*master$' | xargs git branch -d"
 
 # cucumber
 alias bcuke='bundle exec cucumber -p browser'
