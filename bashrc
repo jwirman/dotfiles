@@ -63,6 +63,8 @@ alias data='cd ~/src/IDme/core/idme-data/'
 alias td='cd ~/src/IDme/idme-test-drive/'
 alias capt='cd ~/src/IDme/captain-deploy/'
 alias arcs='cd ~/src/IDme/idme-arcs/'
+alias wal='cd ~/src/IDme/user/idme-wallet/'
+alias mp='cd ~/src/IDme/user/idme-marketplace/'
 
 # bundler
 alias b='bundle'
