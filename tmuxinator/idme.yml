@@ -31,8 +31,9 @@ tmux_options: -f ~/.tmux.conf
 
 windows:
   - editor:
-      root: ~/src/IDme/core/idme-verification
+      root: ~/src/IDme/services_core/idme-verification
       layout: 4ea6,318x70,0,0[318x60,0,0,0,318x9,0,61{159x9,0,61,1,158x9,160,61,2}]
+            # 5834,318x70,0,0[318x59,0,0,19,318x10,0,60{159x10,0,60,20,158x10,160,60,21}]]
       panes:
         - vim
         #- #empty, commandline

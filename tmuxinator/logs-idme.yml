@@ -1,7 +1,7 @@
 # ~/.tmuxinator/idme-logs.yml
 
 name: idme-logs
-root: ~/src/IDme/core
+root: ~/src/IDme/services_core
 
 # Optional tmux socket
 # socket_name: foo

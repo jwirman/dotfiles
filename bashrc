@@ -7,7 +7,7 @@ export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export CLICOLOR=1
 export LSCOLORS=Exfxcxdxbxegedabagacad
 export EDITOR='vim'
-export GREP_OPTIONS='--color=auto --exclude-dir=\.git'
+#export GREP_OPTIONS='--color=auto --exclude-dir=\.git'  # no longer supported
 export HISTCONTROL=ignoreboth:erasedups
 export HISTSIZE=10000
 export LESS="-ErX"
@@ -54,17 +54,17 @@ alias github='open https://github.com/IDme/$(basename `git rev-parse --show-topl
 alias jira='function _jira(){ open https://idmeinc.atlassian.net/browse/$(git rev-parse --abbrev-ref HEAD); };_jira'
 
 # ID.me apps
-alias hlp='cd ~/src/IDme/user/idme-hosted-pages/'
-alias iva='cd ~/src/IDme/core/idme-verification/'
-alias idp='cd ~/src/IDme/core/idme-idp/'
-alias admin='cd ~/src/IDme/core/idme-admin/'
-alias sup='cd ~/src/IDme/core/idme-support/'
-alias data='cd ~/src/IDme/core/idme-data/'
-alias td='cd ~/src/IDme/idme-test-drive/'
-alias capt='cd ~/src/IDme/captain-deploy/'
-alias arcs='cd ~/src/IDme/idme-arcs/'
-alias wal='cd ~/src/IDme/user/idme-wallet/'
-alias mp='cd ~/src/IDme/user/idme-marketplace/'
+alias hlp='cd ~/src/IDme/services_user/idme-hosted-pages/'
+alias iva='cd ~/src/IDme/services_core/idme-verification/'
+alias idp='cd ~/src/IDme/services_core/idme-idp/'
+alias admin='cd ~/src/IDme/services_core/idme-admin/'
+alias sup='cd ~/src/IDme/services_core/idme-support/'
+alias data='cd ~/src/IDme/services_core/idme-data/'
+alias td='cd ~/src/IDme/services_internal/idme-test-drive/'
+alias capt='cd ~/src/IDme/devops/captain-deploy/'
+alias arcs='cd ~/src/IDme/services_internal/idme-arcs/'
+alias wal='cd ~/src/IDme/services_user/idme-wallet/'
+alias shop='cd ~/src/IDme/services_user/idme-marketplace/'
 
 # bundler
 alias b='bundle'
