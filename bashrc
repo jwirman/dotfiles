@@ -44,7 +44,7 @@ alias rc='bundle exec rails console'
 alias tail='tail -f log/development.log'
 alias jsc='/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources/jsc'
 alias psef='ps -ef | grep'
-#alias rtags="find . -name '*.rb' | xargs ctags -a"
+alias rtags="find . -name '*.rb' | xargs ctags -a"
 #alias stalk='ps auxwww | head -n 1; ps auxwww | grep -v "grep -i" | grep -i '
 
 alias whatsmyip='curl ipinfo.io'
@@ -56,6 +56,7 @@ alias jira='function _jira(){ open https://idmeinc.atlassian.net/browse/$(git re
 # ID.me apps
 alias hlp='cd ~/src/IDme/services_user/idme-hosted-pages/'
 alias iva='cd ~/src/IDme/services_core/idme-verification/'
+alias diva='cd ~/src/IDme/services_core/disney-verification/'
 alias idp='cd ~/src/IDme/services_core/idme-idp/'
 alias admin='cd ~/src/IDme/services_core/idme-admin/'
 alias sup='cd ~/src/IDme/services_core/idme-support/'
