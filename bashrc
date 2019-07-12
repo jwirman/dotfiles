@@ -57,6 +57,7 @@ alias jira='function _jira(){ open https://idmeinc.atlassian.net/browse/$(git re
 alias hlp='cd ~/src/IDme/services_user/idme-hosted-pages/'
 alias iva='cd ~/src/IDme/services_core/idme-verification/'
 alias diva='cd ~/src/IDme/services_core/disney-verification/'
+alias mgm='cd ~/src/IDme/services_core/mgm-verification/'
 alias idp='cd ~/src/IDme/services_core/idme-idp/'
 alias admin='cd ~/src/IDme/services_core/idme-admin/'
 alias sup='cd ~/src/IDme/services_core/idme-support/'
