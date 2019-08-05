@@ -51,7 +51,7 @@ map ,* :s/^\(.*\)$/\/\* \1 \*\//<CR><Esc>:nohlsearch<CR>
 
 
 " old stuff
-"cd /Users/justin 
+"cd /Users/justin.wirman
 "map <S-Insert> <MiddleMouse> " Make shift-insert work like in Xterm
 "map! <S-Insert> <MiddleMouse>
 "let c_comment_strings=1 "highlight strings inside C comments

@@ -38,8 +38,8 @@ alias ls='ls -G'
 alias ll='ls -lG'
 alias vim='vim -c :NERDTree'
 
-#USER="justin"
-#LOGNAME="justin"
+#USER="justin.wirman"
+#LOGNAME="justin.wirman"
 #GREP_OPTIONS="--exclude-dir=\.svn"
 #SVN_EDITOR="vi"
 HISTCONTROL=erasedups
