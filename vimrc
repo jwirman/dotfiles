@@ -66,7 +66,7 @@ set smartcase
 let mapleader = "\<Space>"
 
 " skip to underscore or capital when moving by word
-call camelcasemotion#CreateMotionMappings('<leader>')
+"call camelcasemotion#CreateMotionMappings('<leader>')
 
 let @p='ip "*"*80pp "*"*80k'
 nnoremap <leader>p op "*"*80<c-m>p <c-m>p "*"*80<esc>

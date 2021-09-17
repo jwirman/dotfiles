@@ -47,6 +47,9 @@ alias psef='ps -ef | grep'
 alias rtags="find . -name '*.rb' | xargs ctags -a"
 #alias stalk='ps auxwww | head -n 1; ps auxwww | grep -v "grep -i" | grep -i '
 
+# usage: echo '<ugly json here>' | prettyjson
+alias prettyjson='python -m json.tool'
+
 alias whatsmyip='curl ipinfo.io'
 # Opens current branch in github
 alias github='open https://github.com/IDme/$(basename `git rev-parse --show-toplevel`)/tree/$(git rev-parse --abbrev-ref HEAD)'
@@ -63,8 +66,12 @@ alias admin='cd ~/src/IDme/services_core/idme-admin/'
 alias sup='cd ~/src/IDme/services_core/idme-support/'
 alias data='cd ~/src/IDme/services_core/idme-data/'
 alias td='cd ~/src/IDme/services_internal/idme-test-drive/'
+alias evt='cd ~/src/IDme/services_internal/events-api/'
 alias capt='cd ~/src/IDme/devops/captain-deploy/'
 alias arcs='cd ~/src/IDme/services_internal/idme-arcs/'
+alias ref='cd ~/src/IDme/services_core/idme-referee/'
+alias por='cd ~/src/IDme/services_core/portal-api/'
+alias acc='cd ~/src/IDme/services_user/account-api/'
 alias wal='cd ~/src/IDme/services_user/idme-wallet/'
 alias shop='cd ~/src/IDme/services_user/idme-marketplace/'
 alias real='cd ~/src/IDme/services_core/idme-real/'
@@ -73,6 +80,8 @@ alias auth='cd ~/src/IDme/services_internal/idme-authority/'
 alias enc='cd ~/src/IDme/services_internal/idme-encryption/'
 alias obl='cd ~/src/IDme/services_document/obliterate-service/'
 alias bag='cd ~/src/IDme/devops/idme-production-data-bags/data_bags'
+alias ts='cd ~/src/IDme/gems/telesign'
+alias pf='cd ~/src/IDme/gems/payfone'
 
 # bundler
 alias b='bundle'
