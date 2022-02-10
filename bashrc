@@ -55,6 +55,8 @@ alias whatsmyip='curl ipinfo.io'
 alias github='open https://github.com/IDme/$(basename `git rev-parse --show-toplevel`)/tree/$(git rev-parse --abbrev-ref HEAD)'
 # Opens current branch in jira
 alias jira='function _jira(){ open https://idmeinc.atlassian.net/browse/$(git rev-parse --abbrev-ref HEAD); };_jira'
+# yubikey craziness
+alias yk="ssh-add -e /usr/local/lib/opensc-pkcs11.so; ssh-add -s /usr/local/lib/opensc-pkcs11.so"
 
 # ID.me apps
 alias hlp='cd ~/src/IDme/services_user/idme-hosted-pages/'
