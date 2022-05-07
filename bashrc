@@ -48,6 +48,7 @@ alias rtags="find . -name '*.rb' | xargs ctags -a"
 #alias stalk='ps auxwww | head -n 1; ps auxwww | grep -v "grep -i" | grep -i '
 
 # usage: echo '<ugly json here>' | prettyjson
+# or to validate: prettyjson < data_to_validate.json
 alias prettyjson='python -m json.tool'
 
 alias whatsmyip='curl ipinfo.io'
@@ -81,9 +82,10 @@ alias id='cd ~/src/IDme/services_core/idme-identity/'
 alias auth='cd ~/src/IDme/services_internal/idme-authority/'
 alias enc='cd ~/src/IDme/services_internal/idme-encryption/'
 alias obl='cd ~/src/IDme/services_document/obliterate-service/'
-alias bag='cd ~/src/IDme/devops/idme-production-data-bags/data_bags'
+alias bag='cd ~/src/IDme/devops/chef-data-bags/data_bags'
 alias ts='cd ~/src/IDme/gems/telesign'
 alias pf='cd ~/src/IDme/gems/payfone'
+alias pig='cd ~/src/IDme/services_internal/vendor-api-gateway/'
 
 # bundler
 alias b='bundle'
