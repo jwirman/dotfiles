@@ -6,7 +6,7 @@ shopt -s histappend
 ulimit -n 10240
 
 # environment variables
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+#export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export CLICOLOR=1
 export LSCOLORS=Exfxcxdxbxegedabagacad
 export EDITOR='vim'
@@ -16,6 +16,7 @@ export HISTSIZE=10000
 export LESS="-ErX"
 #export PS1="[\u@local:\W:(\$(git branch 2>/dev/null | grep '^*' | colrm 1 2))]\$ "
 #export PATH=~/homebrew/bin:$PATH
+eval "$(/opt/homebrew/bin/brew shellenv)"
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/share/npm/bin:$PATH
