@@ -2,6 +2,9 @@ umask 002 # permissions for new files/directories
 
 shopt -s histappend
 
+# increase limit for number of open files
+ulimit -n 10240
+
 # environment variables
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export CLICOLOR=1
@@ -149,3 +152,7 @@ source ~/.bash_vcs.sh
 source ~/.tmuxinator/tmuxinator.bash
 # amazon cli completion
 complete -C aws_completer aws
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

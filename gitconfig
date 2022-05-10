@@ -8,6 +8,7 @@
   editor = vim
   excludesfile = ~/.gitignore
   sharedRepository = all
+	hooksPath = /Users/justin.wirman/src/dotfiles/githooks
 [color]
   ui = auto
   grep = auto
