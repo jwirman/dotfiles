@@ -43,6 +43,7 @@
   ls = log --graph --color --pretty=\"format:%C(yellow)%h%Creset%C(green)%d%Creset %s %Cblue[%aN]%Creset %C(magenta){%cr}%Creset\"
   la = log --graph --color --pretty=\"format:%C(yellow)%h%Creset%C(green)%d%Creset %s %Cblue[%aN]%Creset %C(magenta){%cr}%Creset\" --all
   unstage = reset HEAD --
+  crypt-users = "! git log --format=full .git-crypt/keys/*/*/*.gpg | grep -E '^ .+' | sed 's/ *$//g' | awk '{gsub(/^[ \t]+/,\"\"); print $0 }'"
 [grep]
   lineNumber = true
 [push]
