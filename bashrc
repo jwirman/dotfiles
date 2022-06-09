@@ -34,6 +34,7 @@ export PATH=.bundle/bin:$PATH
 alias ..="cd .."
 alias ...="cd .. ; cd .."
 alias c='clear'
+alias dot='cd ~/src/dotfiles'
 #alias ls='ls -G'
 #alias ll='ls -lG'
 alias ll='ls -la'
