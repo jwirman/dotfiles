@@ -18,11 +18,9 @@ export LESS="-ErX"
 #export PATH=~/homebrew/bin:$PATH
 eval "$(/opt/homebrew/bin/brew shellenv)"
 export PATH=/usr/local/bin:$PATH
-export PATH=/usr/local/sbin:$PATH
-export PATH=/usr/local/share/npm/bin:$PATH
-export PATH=/usr/local/heroku/bin:$PATH
+export PATH=/opt/homebrew/bin:$PATH
+export PATH=/opt/homebrew/sbin:$PATH
 export PATH=.bundle/bin:$PATH
-export NODE_PATH=/usr/local/share/npm/lib/node_modules
 #export RUBY_HEAP_MIN_SLOTS=4000000
 #export RUBY_HEAP_SLOTS_INCREMENT=250000
 #export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
