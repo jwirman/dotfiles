@@ -103,6 +103,10 @@ map <Leader>a :call RunAllSpecs()<CR>
 let g:NERDTreeHijackNetrw = 0
 " \n toggles the nerd tree
 map <Leader>n :NERDTreeToggle<CR>
+" \d locates current file in nerd tree
+map <leader>d :NERDTreeFind<CR>
+" quit vim if NERDTree is last buffer
+"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Command-T configuration
 let g:CommandTMaxHeight=20
