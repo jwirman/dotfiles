@@ -111,6 +111,7 @@ map <leader>d :NERDTreeFind<CR>
 " Command-T configuration
 let g:CommandTPreferredImplementation='ruby'
 let g:CommandTMaxHeight=20
+let g:CommandTWildIgnore='*/tmp,*/node_modules,*/public,*/coverage'
 
 " Without setting this, ZoomWin restores windows in a way that causes
 " equalalways behavior to be triggered the next time CommandT is used.
