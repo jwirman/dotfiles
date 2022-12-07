@@ -109,6 +109,7 @@ map <leader>d :NERDTreeFind<CR>
 "autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Command-T configuration
+let g:CommandTPreferredImplementation='ruby'
 let g:CommandTMaxHeight=20
 
 " Without setting this, ZoomWin restores windows in a way that causes

@@ -52,7 +52,7 @@ alias rtags="find . -name '*.rb' | xargs ctags -a"
 
 # usage: echo '<ugly json here>' | prettyjson
 # or to validate: prettyjson < data_to_validate.json
-alias prettyjson='python -m json.tool'
+alias prettyjson='python3 -m json.tool'
 
 alias whatsmyip='curl ipinfo.io'
 # Opens current branch in github
@@ -89,6 +89,7 @@ alias bag='cd ~/src/IDme/devops/chef-data-bags/data_bags'
 alias ts='cd ~/src/IDme/gems/telesign'
 alias pf='cd ~/src/IDme/gems/payfone'
 alias pig='cd ~/src/IDme/services_internal/vendor-api-gateway/'
+alias gems='cd ~/src/IDme/gems/'
 
 # bundler
 alias b='bundle'
