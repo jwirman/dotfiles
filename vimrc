@@ -107,7 +107,7 @@ map <Leader>n :NERDTreeToggle<CR>
 " \d locates current file in nerd tree
 map <leader>d :NERDTreeFind<CR>
 " quit vim if NERDTree is last buffer
-"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Command-T configuration
 let g:CommandTPreferredImplementation='ruby'
