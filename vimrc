@@ -74,6 +74,7 @@ let @l='iRails.logger.warn "*"*80Rails.logger.warn Rails.logger.warn "*"*80k'
 
 " Show relative paths in buffer explorer.
 let g:bufExplorerShowRelativePath=1
+let g:snipMate = { 'snippet_version' : 1 }
 
 " quick turn off highlighting
 map <Leader>h :noh<CR>
