@@ -171,6 +171,7 @@ autocmd BufWritePre *.erb     :%s/\s\+$//e
 autocmd BufWritePre *.rake    :%s/\s\+$//e
 autocmd BufWritePre *.haml    :%s/\s\+$//e
 autocmd BufWritePre *.js      :%s/\s\+$//e
+autocmd BufWritePre *.java    :%s/\s\+$//e
 autocmd BufWritePre *.yml     :%s/\s\+$//e
 autocmd BufWritePre *.feature :%s/\s\+$//e
 autocmd BufWritePre *.coffee  :%s/\s\+$//e
