@@ -47,3 +47,5 @@ HISTSIZE=10000
 shopt -s histappend
 #export GREP_OPTIONS SVN_EDITOR USER LOGNAME HISTCONTROL HISTSIZE
 export HISTCONTROL HISTSIZE
+### Added by node-macos-certs on Tue Feb  6 07:35:32 EST 2024 ###
+export NODE_EXTRA_CA_CERTS="/Users/justin.wirman/.local/node-macos-certs/certs.pem"

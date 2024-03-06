@@ -93,7 +93,8 @@ alias gems='cd ~/src/IDme/gems/'
 
 # bundler
 alias b='bundle'
-alias bi='b install --path .bundle --binstubs .bundle/bin'
+#alias bi='b install'
+alias bi='b install --binstubs .bundle/bin'
 alias bil='bi --local'
 alias bu='b update'
 alias bp='b package'
@@ -157,3 +158,5 @@ complete -C aws_completer aws
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+### Added by node-macos-certs on Tue Feb  6 07:35:32 EST 2024 ###
+export NODE_EXTRA_CA_CERTS="/Users/justin.wirman/.local/node-macos-certs/certs.pem"
