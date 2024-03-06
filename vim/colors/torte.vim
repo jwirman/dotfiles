@@ -30,7 +30,8 @@ highlight Type						gui=NONE
 " Console
 highlight Normal     ctermfg=LightGrey	ctermbg=Black
 highlight Search     ctermfg=Black	ctermbg=Red	cterm=NONE
-highlight Visual					cterm=reverse
+"highlight Visual     cterm=reverse
+highlight Visual     cterm=NONE
 highlight Cursor     ctermfg=Black	ctermbg=Green	cterm=bold
 highlight Special    ctermfg=Brown
 highlight Comment    ctermfg=Blue
