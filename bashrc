@@ -50,9 +50,11 @@ alias psef='ps -ef | grep'
 alias rtags="find . -name '*.rb' | xargs ctags -a"
 #alias stalk='ps auxwww | head -n 1; ps auxwww | grep -v "grep -i" | grep -i '
 
-# usage: echo '<ugly json here>' | prettyjson
+# usage: echo '<ugly json here>' | prettyjson | vi -
 # or to validate: prettyjson < data_to_validate.json
 alias prettyjson='python3 -m json.tool'
+# usage: echo '<ugly xml here>' | prettyxml | vi -
+alias prettyxml='xmllint --format -'
 
 alias whatsmyip='curl ipinfo.io'
 # Opens current branch in github
@@ -101,6 +103,10 @@ alias bp='b package'
 alias be='b exec'
 alias binit="bi && bp && echo 'vendor/bundle' >> .gitignore"
 
+# vault
+alias sshs="VAULT_ENV=nonprod ssh-login.sh"
+alias sshp="VAULT_ENV=prod ssh-login.sh"
+
 # git stuff
 alias gs='git status'
 alias gsl='git stash list'
@@ -111,12 +117,14 @@ alias gb='git branch'
 alias gc='git commit'
 alias gd='git diff'
 alias gds='git diff --staged'
+alias gr='git restore'
 alias grs='git restore --staged'
 alias go='git checkout'
 alias gk='gitk --all&'
 alias gpr='git pull --rebase'
 alias gp='git pull'
 alias grc='git rebase --continue'
+alias gmm="git merge master"
 alias prp='git pull --rebase && git push'
 alias gg='git grep --break --heading $1'
 alias gx='gitx --all'

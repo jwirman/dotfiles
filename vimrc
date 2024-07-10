@@ -199,6 +199,9 @@ endif
 " Make non-selected window's status bars readable
 autocmd ColorScheme * highlight StatusLineNC guifg=#555555 guibg=#202020
 
+let g:loaded_youcompleteme = 1
+let g:copilot_node_command = "/opt/homebrew/Cellar/node/21.7.1/bin/node"
+
 "let g:ConqueTerm_InsertOnEnter = 0
 "
 "" Tab completion
