@@ -91,3 +91,6 @@
 [submodule "vim/bundle/rhubarb"]
 	path = vim/bundle/rhubarb
 	url = https://github.com/tpope/vim-rhubarb.git
+[submodule "vim/bundle/copilot"]
+	path = vim/bundle/copilot
+	url = git@github.com:github/copilot.vim.git
